@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,24 +13,36 @@
 	width: 600px;
 	margin-top: 200px;
 	position: absolute;
-	animation-name: mitsubishi-ride;
-	animation-delay: 0.3s;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
+	-webkit-animation-name: mitsubishi-ride;
+	        animation-name: mitsubishi-ride;
+	-webkit-animation-delay: 0.3s;
+	        animation-delay: 0.3s;
+	-webkit-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
 }
 .car-mercedes{
 	margin-left: 1320px;
 	margin-top: 200px;
 	width: 600px;
 	position: absolute;
-	animation-name: mercedes-ride;
-	animation-delay: 0.3s;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
+	-webkit-animation-name: mercedes-ride;
+	        animation-name: mercedes-ride;
+	-webkit-animation-delay: 0.3s;
+	        animation-delay: 0.3s;
+	-webkit-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
 }
 .flames{
 	/*width: 100px;*/
@@ -31,13 +50,27 @@
 	margin-top: 350px;
 	margin-left: 850px;
 	position: absolute;
-	animation-name: boom;
-	animation-delay: 4s;
-	animation-duration: 0.7s;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
+	-webkit-animation-name: boom;
+	        animation-name: boom;
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
+	-webkit-animation-duration: 0.7s;
+	        animation-duration: 0.7s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
 	opacity: 0;
+}
+@-webkit-keyframes mitsubishi-ride{
+	from{
+		left: 0;
+	}
+	to{
+		left: 380px;
+	}
 }
 @keyframes mitsubishi-ride{
 	from{
@@ -47,12 +80,34 @@
 		left: 380px;
 	}
 }
+@-webkit-keyframes mercedes-ride{
+	from{
+		right: 0px;
+	}
+	to{
+		right: 380px;
+	}
+}
 @keyframes mercedes-ride{
 	from{
 		right: 0px;
 	}
 	to{
 		right: 380px;
+	}
+}
+@-webkit-keyframes boom{
+	30%{
+		opacity: 0.3;
+	}
+	60%{
+		opacity: 0.6;
+	}
+	80%{
+		opacity: 0.8;
+	}
+	100%{
+		opacity: 1;
 	}
 }
 @keyframes boom{
