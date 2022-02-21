@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.car-mitsubishi{
+	width: 600px;
+	margin-top: 200px;
+	position: absolute;
+	animation-name: mitsubishi-ride;
+	animation-delay: 0.3s;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+.car-mercedes{
+	margin-left: 1320px;
+	margin-top: 200px;
+	width: 600px;
+	position: absolute;
+	animation-name: mercedes-ride;
+	animation-delay: 0.3s;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+.flames{
+	/*width: 100px;*/
+	height: 200px;
+	margin-top: 350px;
+	margin-left: 850px;
+	position: absolute;
+	animation-name: boom;
+	animation-delay: 4s;
+	animation-duration: 0.7s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes mitsubishi-ride{
+	from{
+		left: 0;
+	}
+	to{
+		left: 380px;
+	}
+}
+@keyframes mercedes-ride{
+	from{
+		right: 0px;
+	}
+	to{
+		right: 380px;
+	}
+}
+@keyframes boom{
+	30%{
+		opacity: 0.3;
+	}
+	60%{
+		opacity: 0.6;
+	}
+	80%{
+		opacity: 0.8;
+	}
+	100%{
+		opacity: 1;
+	}
+}
